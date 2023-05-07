@@ -1,0 +1,16 @@
+﻿body 
+{
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+    font-size: 14px;
+}
+#content
+{
+width:960px;
+    }
+.article
+{
+    width:700px;
+    float:left;
+    text-align:left;
+    font-size: 14px;
+}

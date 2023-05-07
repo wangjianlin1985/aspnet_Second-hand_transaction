@@ -1,0 +1,110 @@
+﻿body
+{
+    font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+}
+.navigater
+{
+    position: fixed;
+    background: #0666c5;
+    background-color: #0767c8;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#086ed5),to(#055db5));
+    left: 0;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #044e97;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
+}
+.inner_wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.zu-top-search
+{
+    position: relative;
+    margin: 7px 0 0 12px;
+    float: left;
+}
+.nav_Logo
+{
+    float: left;
+    display: block;
+}
+.nav_Input
+{
+    position: relative;
+    padding: 7px 10px;
+    font-size: 14px;
+    outline: medium none;
+    overflow: hidden;
+    width: 270px;
+    line-height: 17px;
+    border: 1px solid #045BB3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1);
+    background-color: White;
+    height: 16px;
+    color: #49525c;
+}
+.search_btn
+{
+    font-weight:bold;
+    margin: 0 0 0 6px;
+    background: #0d77e4;
+    background-color: #0e78e7;
+    background-image: -webkit-linear-gradient(top,#0e7bef,#0d73da);
+    color: #FFF;
+    font-size: 14px;
+    width: 66px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #045BB2;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+}
+
+.search_btn2
+{
+    margin: 0 0 0 6px;
+    background: #0d77e4;
+    background-color: #0e78e7;
+    background-image: -webkit-linear-gradient(top,#0e7bef,#0d73da);
+    color: #E6E6FA;
+    font-size: 14px;
+    width: 80px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #045BB2;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);
+}
+
+.top-nav-profile
+{
+    padding-top:15px;
+    color:White;
+    float:right;
+    position:relative;
+    margin-right:0px;
+    top: 0;
+    min-width: 120px;
+    z-index: 10;
+}
+.zu-top-nav-ul {
+padding: 0;
+margin: 0 0 0 18px;
+}
+.zg-clear {
+height: 1%;
+}
+
+.zu-top-nav-li {
+position: relative;
+float: left;
+margin: 0;
+list-style: none;
+}

@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+    <link href="StyleSheet/master.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="navigater">
+        <div class="inner_wrap">
+            <a href="Default.aspx">
+                <img src="Image/nav_Logo.png" class="nav_Logo" alt="换吧" /></a>
+            <div class="zu-top-search">
+                <asp:TextBox ID="sstext" runat="server" CssClass="nav_Input" />
+                <asp:DropDownList ID="DropDownList1" runat="server" Font-Size="Large" Font-Strikeout="False"
+                    ForeColor="#666666">
+                    <asp:ListItem Text="换品" Value="1"></asp:ListItem>
+                    <asp:ListItem Text="换客" Value="2"></asp:ListItem>
+                </asp:DropDownList>
+                <asp:Button ID="Button1" OnClick="Search_Click" runat="server" Text="搜  索" CausesValidation="false"
+                    CssClass="search_btn" />
+                <a href="default.aspx" style="margin-left: 20px;">
+                    <button class="search_btn2" type="button" onclick="window.location.href='/default.aspx'">
+                        主 页</button></a> 
+                        <a href="ss_hp.aspx">
+                            <button class="search_btn2" type="button" onclick="window.location.href='/ss_hp.aspx'">
+                                换品中心</button></a> 
+                                <a href="syxq.aspx">
+                                    <button class="search_btn2" type="button" onclick="window.location.href='/syxq.aspx'">
+                                        需求中心</button></a> 
+                                        <a href="ss_hk.aspx">
+                                            <button class="search_btn2" type="button" onclick="window.location.href='/ss_hk.aspx'">
+                                                换客中心</button></a>
+                                                <a href="tchd.aspx">
+                                            <button class="search_btn2" type="button" onclick="window.location.href='/tchd.aspx'">
+                                                同城活动</button></a>
+            </div>
+            <div class="top-nav-profile">
+                <asp:PlaceHolder ID="PlaceHolder1" runat="server"><span class="a10">您尚未登陆</span>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="PlaceHolder2" runat="server">
+                    <asp:HyperLink ID="HyperLink1" CssClass="a10" NavigateUrl="myly.aspx" runat="server" />
+                </asp:PlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 25px 0 50px; position: relative;">
+        <center>
+            <table width="960" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                </tr>
+                <tr style="height: 60px">
+                    <td width="600" align="right" valign="bottom">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="21" style="padding-bottom: 12px; padding-right: 0px;">
+                                    <img alt="" src="image/arr.jpg" />&nbsp;<a class="a5" href="login.aspx">用户登录</a>
+                                    &nbsp;&nbsp;
+                                    <img alt="" src="image/arr.jpg" />&nbsp;<a class="a5" href="reg.aspx">用户注册</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr height="1">
+                    <td colspan="2" bgcolor="#bdbdbc">
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </center>
+    </div>
+    </form>
+</body>
+</html>
